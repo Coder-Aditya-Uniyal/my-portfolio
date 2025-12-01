@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Aditya Codes — Raftar | Portfolio</title>
+<meta name="description" content="Aditya (Raftar) — Frontend & Mobile Engineer. Building performant interfaces, Flutter apps, and developer tools." />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#111827" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aditya Codes — Raftar | Portfolio" />
+<meta property="og:description" content="Frontend & Mobile Engineer. Building performant interfaces, Flutter apps, and developer tools." />
+<meta property="og:image" content="/logo.png" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aditya Codes — Raftar | Portfolio" />
+<meta name="twitter:description" content="Frontend & Mobile Engineer. Building performant interfaces, Flutter apps, and developer tools." />
+<meta name="twitter:image" content="/logo.png" />
+
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="/logo.png" alt="Aditya Codes" class="logo" />
+        <div class="brand-text">
+          <h1>Aditya (Raftar)</h1>
+          <p class="muted">Frontend & Mobile Engineer</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2 class="hero-title">Building focused, maintainable interfaces.</h2>
+      <p class="lead">I craft front-ends and mobile apps with attention to performance, accessibility, and clarity. Projects and resume will be added soon.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Hire me</a>
+        <a class="btn" href="#projects">See work</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h3>Featured projects</h3>
+      <p class="muted">No screenshots uploaded yet. Add them via the projects JSON file or edit script.js.</p>
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+    <section id="skills" class="section">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div class="chip">JavaScript (ES6+)</div>
+        <div class="chip">React / Next.js</div>
+        <div class="chip">Flutter / Dart</div>
+        <div class="chip">Python</div>
+        <div class="chip">Tailwind CSS</div>
+        <div class="chip">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <div class="contact-grid">
+        <div>
+          <p>Open to freelance work and collaborations. Send a short message describing your project and timeline.</p>
+          <a class="btn primary" href="mailto:raftar@example.com?subject=Project%20Inquiry">Email me</a>
+        </div>
+        <form id="contactForm" class="contact-form" onsubmit="return false;">
+          <label>Name<input type="text" id="name" required /></label>
+          <label>Email<input type="email" id="email" required /></label>
+          <label>Message<textarea id="message" rows="5" required></textarea></label>
+          <div><button id="sendBtn" class="btn">Send</button></div>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aditya (Raftar) — Aditya Codes</p>
+    </div>
+  </footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
